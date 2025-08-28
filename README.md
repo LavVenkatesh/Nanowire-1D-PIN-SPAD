@@ -1,29 +1,25 @@
 # ⚡ MATLAB–COMSOL LiveLink SPAD Simulation
 
-This repository contains automated simulation scripts for **1D nanowire PIN/SPAD device modeling** using **COMSOL Multiphysics** with **MATLAB LiveLink**.  
+This repository contains automated simulation scripts for **1D nanowire PIN SPAD device modeling** using **COMSOL Multiphysics** with **MATLAB LiveLink**.  
 The workflow integrates geometry creation, physics setup, parameter configuration, study execution, voltage sweeps, and automated result extraction/plotting.
 
----
+## 📖 References
 
-## 🔑 Features
-- Modular MATLAB scripts for COMSOL model setup:
-  - `init_model.m` → Initializes COMSOL model.  
-  - `set_parameters.m` → Defines device geometry, doping, and ionization parameters.  
-  - `build_geometry_physics.m` → Sets up geometry and semiconductor physics (PIN/SPAD structure).  
-  - `run_studies.m` → Configures and executes stationary + transient studies.  
-  - `run_voltage_sweep.m` → Automates voltage sweep (I–V and transient I–t analysis).  
-  - `plot_all.m` → Generates plots of extracted results.  
-- Fully automated workflow controlled by **`main.m`**.  
-- Supports **bias-dependent I–V** and **transient I–t** curves.  
-- Reproducible and extensible for SPAD research.
+This project is based on methodologies and concepts discussed in the following reference:
+
+-[Li, Z., Tan, H. H., Jagadish, C., & Fu, L., 2024](https://iopscience.iop.org/article/10.1088/1361-6528/ad2019)
 
 ---
 
-## 📊 Applications
-- Single-Photon Avalanche Diode (**SPAD**) modeling.  
-- Avalanche breakdown and transient analysis.  
-- Voltage sweep automation for semiconductor devices.  
-- PDE-based optoelectronic device simulations.  
+## 📂 Repository Structure
+
+
+- `init_model.m` → Initializes COMSOL model.  
+- `set_parameters.m` → Defines device geometry, doping, and ionization parameters.  
+- `build_geometry_physics.m` → Sets up geometry and semiconductor physics (PIN SPAD structure).  
+- `run_studies.m` → Configures and executes stationary + transient studies.  
+- `run_voltage_sweep.m` → Automates voltage sweep (I–V and transient I–t analysis).  
+- `plot_all.m` → Generates plots of extracted results.  
 
 ---
 
