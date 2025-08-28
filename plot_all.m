@@ -4,7 +4,7 @@
 % Generates plots (IV curves and I–t dynamics)
 % ========================================================================
 
-disp('=== Step 3: Plotting Results ===');
+disp('=== Plotting Results ===');
 
 % --- Coarse IV Curve ---
 figure;
@@ -42,4 +42,5 @@ c.TickLabels = round(linspace(1,40,6));  % match coarse sweep range
 
 set(gca,'YScale','log'); 
 hold off;
+
 disp('=== Plotting Complete ===');
